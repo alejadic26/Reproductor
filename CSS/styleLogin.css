@@ -1,0 +1,113 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css');
+*{
+  padding:0;
+  margin: 0;
+}
+body{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0;
+  min-height: 100vh;
+  place-content: center;
+}
+h2{
+text-align: center;
+}
+
+.login_acc{
+  background-color: rgb(226, 240, 235);
+  width: 350px;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+
+
+.iconos{
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+.iconos i{
+  font-size: large;
+  height: 20px;
+}
+.ingreso_usuario{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background-color: rgb(226, 240, 235);
+     margin-top: 20px;
+     margin-right: 50px;
+}
+
+.ingreso_usuario p{
+  margin-bottom: 8px;
+}
+.ingreso_usuario button {
+  margin-bottom: 2px;
+  padding: 10px;
+  width: 45%;
+  border-radius: 8px;
+  border: 1px solid black;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+
+
+.input-icon {
+  position: relative;
+
+  input {
+    outline: none;
+    padding: 8px 2.5rem 8px 2.5rem;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    height: 20px;
+    margin-bottom: 30px;
+
+
+  width: 94%;
+    }
+    i {
+      position: absolute;
+      z-index: 3;
+      color: black;
+      font-size: 1.3rem;
+      top: 80%;
+      transform: translateY(-190%);
+      right: -2.3rem;
+    }
+  }
+
+  #respuesta{
+    position: absolute;
+    font-size: 13px;
+    color:red;
+    margin-right: 10px;
+    top: 59%;
+    left: 40%;
+  }
+
+  #regresar{
+
+      cursor: pointer;
+      position: absolute;
+      color: var(--primary-color);
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-align: center;
+      color:rgb(15, 15, 15);
+      top: 69%;
+      left: 47%;
+  }
+
+  #regresar a{
+    text-decoration: none;
+    color:rgb(15, 15, 15);
+  }

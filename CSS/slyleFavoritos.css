@@ -1,0 +1,25 @@
+
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css');
+.favoritos{
+    height: 25vh;
+    overflow-y: scroll;
+    width: 35vw;
+    text-align: center;
+}
+
+.favoritos li{
+    height: 12px;
+    background-color: rgb(226, 240, 235);
+    border: 1px solid #ccc;
+    list-style-type: none;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3 ease;
+}
+.iconos_favoritos a{
+    margin-right: 20px;
+    color:rgb(107, 105, 105);
+}

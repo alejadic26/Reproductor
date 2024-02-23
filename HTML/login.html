@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/styleLogin.css" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+   
+    <title>Login</title>
+</head>
+<body>
+        
+            <!--Formulario de Login y registro-->
+                <div class="login_acc">
+                    <h2>Iniciar Sesión</h2>
+                        <div class="iconos">
+                            <i class="fa-solid fa-icons"></i>
+                            <i class="fa-solid fa-music"></i>
+                            <i class="fa-solid fa-guitar"></i>
+                            <i class="fa-solid fa-icons"></i>
+                        </div> 
+                    <!--Login-->
+                      <form class="ingreso_usuario" id="loginForm">
+                        <!--<p>Correo</p>-->
+                        <div class="input-icon">
+                            <input type="text" placeholder="User" id="user"/>
+                            <i class="bi bi-person-fill"></i>
+                        </div>
+                        <div class="input-icon">
+                            <input
+                              type="password"
+                              placeholder="Password"
+                              id="pass" />
+                            <i class="bi bi-eye-fill" id="viewPassword"></i>
+                          </div>
+                          <div id="respuesta"></div>
+                        <button id="logBoton">Login</button>
+                        <div id="regresar">
+                            <i class="bi bi-arrow-left"></i><a href="../HTML/buscador.html" >Back</a>
+                        </div>
+                    </form>
+                </div>
+                <script src="../src/myLogin.js"></script>
+    </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <link rel="stylesheet" href="../CSS/styleBuscador.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/stilyPlayList.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/slyleFavoritos.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/styleReproductor.css" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+ 
+    <title>Document</title>
+</head>
+<body>
+    <div id="buscar">
+        <div class="buscador">
+            <h2>Buscador</h2>
+            <div id="buscado">
+                <input type="search" placeholder="¿Qúe quieres buscar?" name="search" id="search">
+                <button type="submit" id="btnBuscar" >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Buscar</span>
+                </button>
+             
+            </div>
+            <p id="prueba"></p>
+           <a href="../HTML/login.html" id="logo"><i class="bi bi-person-circle"></i></a>
+        </div>
+        
+        <div class="resultadoBuscador">
+            <h4>Resultado del buscador</h4>
+            <ul id="resultado_buscador">
+                <!-- aqui carga las canciones del filtro o toda la lista
+                li
+                li-->
+            </ul>
+        </div>
+    </div>
+    <div class="MyPlaylist">
+        <h4>My Playlist</h4>
+        <ul  id="playlist_lista">
+           
+           
+        </ul>
+    </div>
+    <div class="favoritos">
+        <h4>Favoritos</h4>
+        <ul id="favoritos_lista">
+            <!-- aqui carga las canciones del filtro o toda la lista
+                li
+                li-->
+        </ul>
+    </div>
+    <div class="reproductor">
+        <div class="albun">        
+            <p><img id="imagen_reproductor" src="../IMG/music.jpg" alt="Album Cover" class="player__img" loading="lazy" width="400px" height="250px"></p>
+            <ul class="infor_albun">
+                <i class="fa-solid fa-headphones-simple"></i>
+                <li id="id_cancion" style= "display:none"></li>
+                <li id="lista_reproduccion" style= "display:none"></li>
+                <li>Nombre: <span style="margin-left:2px" id="nombre_cancion"></span></li>
+                <li>Artista: <span style="margin-left:2px" id="artista_cancion"></span></li>
+                <li>Album: <span style="margin-left:2px" id="album_cancion"></span></li>
+                <li>Duración: <span style="margin-left:2px" id="duracion_cancion"></span></li>
+                <li>Año: <span style="margin-left:2px" id="anio_cancion"></span></li>
+                <li>Género: <span style="margin-left:2px" id="genero_cancion"></span></li>
+            </ul>
+        </div> 
+        <audio id="audio_reproductor" src="" ></audio>
+            <div class="iconos_reproductor">
+                <a id="regresar_cancion"><i class="fa-solid fa-backward"></i></a>
+                <a id="reproducir_cancion"><i class="fa-solid fa-caret-right"></i></a>
+            
+                <a id="adelantar_cancion"><i class="fa-solid fa-forward"></i></a>
+                <a id="detener_cancion"><i class="fa-solid fa-stop"></i></a>
+                <a id="mutear_cancion"><i class="fa-regular fa-bell-slash"></i></a>
+            </div>
+        <div>
+            <span id="numero_barra">00:00</span>
+            <input type="range" id="barra_reproductor" value="0" step="0" min="0" max="100"> 
+        </div>
+    </div>
+   <script src="../SRC/mainlogeo.js" difer></script>
+   <script src="../SRC/prototipoReproductor.js" difer></script>
+</body>
+</html>
